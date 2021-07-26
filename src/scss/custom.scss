@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* Responsive Styles */
+
 .margin-fit{
 	margin: -8px -8px 0px -8px;
 }
@@ -277,4 +278,10 @@ svg#clouds {
 .pageDiv {
 	margin-top: 0px;
 	height: calc( 100vh - 68px);
+}
+
+.headerDiv{
+	align-items: center;
+    display: flex;
+    height: 50px;
 }

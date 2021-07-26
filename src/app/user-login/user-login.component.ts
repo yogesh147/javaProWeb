@@ -8,7 +8,5 @@ export class UserLoginComponent implements OnInit {
 
   constructor() { }
   ngOnInit() {
-   console.log('userLog', screen.height);
-   
   }
 }
