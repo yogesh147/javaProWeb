@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,9 +11,9 @@ import { UserLoginComponent } from './user-login.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     UserLoginRoutingModule
   ],
   providers: [],
-  bootstrap: [UserLoginComponent]
 })
 export class UserLoginModule { }
