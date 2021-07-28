@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { UserLoginRoutingModule } from './user-login-routing.module';
 import { UserLoginComponent } from './user-login.component';
@@ -16,9 +17,12 @@ import { UserLoginComponent } from './user-login.component';
     CommonModule,
     UserLoginRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
-  bootstrap: [UserLoginComponent]
+  bootstrap: [UserLoginComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
+
 })
 export class UserLoginModule { }
